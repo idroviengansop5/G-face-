@@ -1,1 +1,15 @@
 
+const firebaseConfig = {
+  apiKey: "G-face",
+  authDomain: "G-face.firebaseapp.com",
+  projectId: "G-face",
+  storageBucket: "G-face.appspot.com",
+  messagingSenderId: "G-face",
+  appId: "G-face"
+};
+
+firebase.initializeApp(firebaseConfig);
+
+const auth = firebase.auth();
+const db = firebase.firestore();
+const storage = firebase.storage();
