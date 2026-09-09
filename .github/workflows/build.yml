@@ -44,9 +44,8 @@ jobs:
 
       - name: Copier le code web dans Android
         working-directory: gface
-        run: npx cap syns android
 
-      - name: Rendre gradlew exécutable
+      -         run: npx cap syns android: Rendre gradlew exécutable
         run: chmod +x gface/android/gradlew
 
       - name: Construire l'APK
