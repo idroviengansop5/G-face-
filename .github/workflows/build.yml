@@ -42,10 +42,11 @@ jobs:
         working-directory: gface
         run: npx capacitor-assets generate --android
 
-      - name: Copier le code web dans Android
+      - name: Synchroniser les plugins natifs et copier le code web
         working-directory: gface
+        run: npx cap sync android
 
-      -         run: npx cap syns android: Rendre gradlew exécutable
+      - name: Rendre gradlew exécutable
         run: chmod +x gface/android/gradlew
 
       - name: Construire l'APK
